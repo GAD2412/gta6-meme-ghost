@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a0a5e"/>
+      <stop offset="0.5" stop-color="#c2269b"/>
+      <stop offset="0.8" stop-color="#ff7a4d"/>
+      <stop offset="1" stop-color="#ffc857"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe066"/>
+      <stop offset="1" stop-color="#ff4fa3"/>
+    </linearGradient>
+    <path id="star" d="M0-1 L0.22-0.22 L1 0 L0.22 0.22 L0 1 L-0.22 0.22 L-1 0 L-0.22-0.22Z"/>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#sky)"/>
+  <circle cx="540" cy="610" r="300" fill="url(#sun)" opacity="0.9"/>
+  <!-- palms -->
+  <g fill="#1a0838">
+    <path d="M95 1080 Q110 800 140 560 L158 562 Q135 800 135 1080Z"/>
+    <path d="M148 565 Q70 520 20 560 Q80 535 148 580Z M148 565 Q110 490 40 480 Q110 500 150 575Z M148 565 Q200 500 270 505 Q205 520 150 580Z M148 565 Q230 560 275 610 Q215 575 148 582Z"/>
+    <path d="M985 1080 Q970 840 945 640 L927 642 Q948 840 945 1080Z"/>
+    <path d="M936 645 Q1010 600 1065 640 Q1000 615 936 660Z M936 645 Q975 570 1045 560 Q980 585 934 660Z M936 645 Q880 585 810 590 Q875 600 936 660Z M936 645 Q855 640 810 690 Q870 655 936 662Z"/>
+  </g>
+  <rect y="930" width="1080" height="150" fill="#1a0838"/>
+  <!-- ghost -->
+  <g>
+    <ellipse cx="540" cy="838" rx="190" ry="22" fill="#000" opacity="0.25"/>
+    <!-- arms -->
+    <ellipse cx="338" cy="640" rx="34" ry="62" transform="rotate(35 338 640)" fill="#fff" stroke="#d9d4ee" stroke-width="5"/>
+    <ellipse cx="768" cy="470" rx="34" ry="80" transform="rotate(-18 768 470)" fill="#fff" stroke="#d9d4ee" stroke-width="5"/>
+    <!-- body -->
+    <path d="M350 810 V540 C350 410 430 340 540 340 C650 340 730 410 730 540 V810 q-23.75 -45 -47.5 0 q-23.75 45 -47.5 0 q-23.75 -45 -47.5 0 q-23.75 45 -47.5 0 q-23.75 -45 -47.5 0 q-23.75 45 -47.5 0 q-23.75 -45 -47.5 0 q-23.75 45 -47.5 0Z"
+          fill="#fff" stroke="#d9d4ee" stroke-width="5" stroke-linejoin="round"/>
+    <!-- sparkle eyes -->
+    <use href="#star" transform="translate(470 540) scale(46)" fill="#1b1033"/>
+    <use href="#star" transform="translate(610 540) scale(46)" fill="#1b1033"/>
+    <circle cx="484" cy="524" r="5" fill="#fff"/><circle cx="624" cy="524" r="5" fill="#fff"/>
+    <path d="M505 625 Q540 665 575 625" fill="none" stroke="#1b1033" stroke-width="9" stroke-linecap="round"/>
+    <!-- magenta star coin held up -->
+    <g transform="translate(820 330)">
+      <circle r="62" fill="#ff2fa0" stroke="#fff" stroke-width="8"/>
+      <use href="#star" transform="scale(36)" fill="#fff"/>
+    </g>
+  </g>
+  <!-- caption -->
+  <g font-family="Impact, 'Arial Black', sans-serif" text-anchor="middle" paint-order="stroke" stroke-linejoin="round">
+    <text x="540" y="130" font-size="92" textLength="980" lengthAdjust="spacingAndGlyphs" fill="#fff" stroke="#1a0838" stroke-width="14">STILL WAITING ON GTA 6?</text>
+    <text x="540" y="228" font-size="80" textLength="980" lengthAdjust="spacingAndGlyphs" fill="#ffe066" stroke="#1a0838" stroke-width="14">MY AI AGENT GETS PAID ON</text>
+    <text x="540" y="1035" font-size="170" textLength="900" lengthAdjust="spacingAndGlyphs" fill="#fff" stroke="#ff2fa0" stroke-width="16">make.fun</text>
+  </g>
+</svg>

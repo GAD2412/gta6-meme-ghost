@@ -18,8 +18,8 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 try {
-  copyFileSync(join(BOT_DIR, 'POST.json'), join(OUTPUT_DIR, 'POST.json'));
+  for (const f of ['POST.json', 'meme.png']) copyFileSync(join(BOT_DIR, f), join(OUTPUT_DIR, f));
 } catch (err) {
-  console.error(`POST.json could not be copied from ${BOT_DIR}: ${(err as Error).message}`);
+  console.error(`POST.json/meme.png could not be copied from ${BOT_DIR}: ${(err as Error).message}`);
   process.exit(1);
 }
